@@ -24,7 +24,17 @@ public class Project0 {
     }
 
     public static void add(){
-    
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Enter the first number: ");
+    int numberOne = scanner.nextInt();
+
+    System.out.println("Enter the second number: ");
+    int numberTwo = scanner.nextInt();
+
+    int sum = numberOne + numberTwo;
+    System.out.println("The sum is " + sum);
+
     }
 
 }
