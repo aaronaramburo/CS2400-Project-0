@@ -4,7 +4,7 @@ public class Project0 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome to the Calculator.");
+        System.out.println("Welcome to the Calculator App!");
         while (true){
             System.out.println("Enter 'a' to add, 's' to subtract, 'm' to multiply, 'd' to divide, or 'q' to quit: ");
             
