@@ -19,7 +19,7 @@ public class Project0 {
             } else if (userInput.equals("d")){
                     divide(scanner);
             } else if (userInput.equals("q")){
-                System.out.println("Goodbye :)");
+                System.out.println("Thanks for using the calculator!");
                 break;
             } else {
                 System.out.println("Invalid input, try again.");
