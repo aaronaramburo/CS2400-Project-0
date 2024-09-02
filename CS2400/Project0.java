@@ -6,7 +6,7 @@ public class Project0 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to the Calculator.");
         while (true){
-            System.out.println("Enter 'a' to add, 's' to subtract, or 'q' to quit: ");
+            System.out.println("Enter 'a' to add, 's' to subtract, 'm' to multiply, 'd' to divide, or 'q' to quit: ");
             
             String userInput = scanner.nextLine();
             
@@ -14,6 +14,10 @@ public class Project0 {
                 add(scanner);
             } else if (userInput.equals("s")){
                 subtract(scanner);
+            } else if (userInput.equals("m")){
+                    multiply(scanner);
+            } else if (userInput.equals("d")){
+                    divide(scanner);
             } else if (userInput.equals("q")){
                 System.out.println("Goodbye!");
                 break;
@@ -52,5 +56,29 @@ public class Project0 {
         scanner.nextLine();
     
         }
+
+    public static void multiply(Scanner scanner){
+        System.out.println("Enter the first number: ");
+        int numberOne = scanner.nextInt();
+    
+        System.out.println("Enter the second number: ");
+        int numberTwo = scanner.nextInt();
+    
+        int product = numberOne * numberTwo;
+        System.out.println("The product is " + product);
+        scanner.nextLine();
+    }
+
+    public static void divide(Scanner scanner){
+        System.out.println("Enter the first number: ");
+        int numberOne = scanner.nextInt();
+    
+        System.out.println("Enter the second number: ");
+        int numberTwo = scanner.nextInt();
+    
+        int quotient = numberOne / numberTwo;
+        System.out.println("The quotient is " + quotient);
+        scanner.nextLine();
+    }
 
 }
